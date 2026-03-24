@@ -1,0 +1,3 @@
+1. Con los datos descargados, realizar una exploración (número de contratos, problemas de la información, analizar cada columna, etc.).
+2. Extender la extracción de información a tres meses y realizar el mismo análisis.
+3. Automatizar la extracción de información con ayuda de Github Actions. 
