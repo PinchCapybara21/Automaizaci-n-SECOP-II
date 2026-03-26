@@ -116,3 +116,19 @@ REGIONAL DE ASEGURAMIENTO EN SALUD No. 1               5   8618000000
 
 Podemos evidenciar una alata contratación ~33 procesos/día en promedio
 podemos ver que el 100% de la contratación de he hecho por medio de Selección Abreviada de Menor Cuantía la cual puede ser un buen indicio de 0 red flags
+
+
+
+#Analisis 2.
+Filas: 1,680
+Columnas: 54
+Memoria aprox: 6.5 MB
+
+es lo mismo, no hay datos nulos, la modalida de contratacion es Selección Abreviada de Menor Cuantía, el tipo de contraato que mas hay es prestacion de servicios
+===== RESUMEN MENSUAL =====
+         num_contratos   valor_total  valor_promedio  pct_directa
+mes
+2025-12             26    6340173688    2.438528e+08          0.0
+2026-01            201  103843530601    5.166345e+08          0.0
+2026-02            652  291613061769    4.472593e+08          0.0
+2026-03            801  414226381969    5.171366e+08          0.0
