@@ -1,1 +1,35 @@
+name: Actualizar datos SECOP
 
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Cada lunes a las 8am UTC (3am Colombia)
+  workflow_dispatch:       # También se puede correr manualmente desde GitHub
+
+jobs:
+  actualizar-datos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install pandas requests pyarrow
+
+      - name: Correr script de actualización
+        run: python actualizar_secop.py
+
+      - name: Guardar datos actualizados en el repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/secop_3m.parquet
+          git diff --cached --quiet || git commit -m "Auto: actualización de datos SECOP $(date +'%Y-%m-%d')"
+          git push
