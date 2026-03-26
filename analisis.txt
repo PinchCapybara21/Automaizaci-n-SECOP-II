@@ -132,3 +132,44 @@ mes
 2026-01            201  103843530601    5.166345e+08          0.0
 2026-02            652  291613061769    4.472593e+08          0.0
 2026-03            801  414226381969    5.171366e+08          0.0
+
+
+--- departamento_entidad (32 valores unicos) ---
+departamento_entidad
+Cundinamarca                  236
+Distrito Capital de Bogotá    166
+Boyacá                        162
+Antioquia                     147
+Valle del Cauca               135
+Caldas                         92
+Santander                      80
+Bolívar                        57
+Tolima                         55
+Norte de Santander             52
+Name: count, dtype: int64
+
+Distribucion por rango de valor (COP):
+rango_valor
+< 1M          0
+1-10M         1
+10-100M     198
+100M-1B    1326
+> 1B        155
+Name: count, dtype: int64
+
+Top 10 entidades por valor:
+                                                    num_contratos  valor_total
+entidad
+MUNICIPIO DE MANIZALES                                         37  27339975348
+HOSPITAL CENTRAL DE LA POLICIA                                  3  21600000000
+ARMADA NACIONAL - DADIN                                         3  14222502800
+REGIONAL DE ASEGURAMIENTO EN SALUD N° 8                         5  14150925000
+RASES - HUILA No.2                                              3  13535000000
+GOBERNACION DEL AMAZONAS                                        1  12050086796
+REGIONAL DE ASEGURAMIENTO EN SALUD N°6                          7  11644000000
+ALCALDÍA DEL DISTRITO TURÍSTICO Y CULTURAL DE C...             10  11083389111
+ARMADA NACIONAL BASE NAVAL ARC MALAGA                           2  10538000000
+POLICIA METROPOLITANA DEL VALLE DE ABURRA                       3  10276591965
+
+===== INDICADORES DE ALERTA =====
+4. Publicados en fin de semana: 21 (1.2%)
